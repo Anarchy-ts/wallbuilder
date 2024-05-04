@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: armbot
+    relative_path: models/urdfs/arm.urdf
+  srdf:
+    relative_path: config/panda.srdf
+  package_settings:
+    author_name: Tamoghna Saha
+    author_email: tamoghnasaha.1234ts@gmail.com
+    generated_timestamp: 1714741554
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
